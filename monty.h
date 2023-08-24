@@ -16,6 +16,7 @@
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
+
 typedef struct instruction_s
 {
 	char *opcode;
@@ -31,12 +32,31 @@ typedef struct instruction_s
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
+
 typedef struct stack_s
 {
 	int n;
 	struct stack_s *prev;
 	struct stack_s *next;
 } stack_t;
+
+/**
+ * struct bus_s - Variables file, line content, args.
+ * @arg: Value.
+ * @file: Pointer to monty file.
+ * @content: Line content.
+ * @lifi: Flag change stack <-> queue.
+ * Description: Carries values through the program.
+ */
+
+typedef struct bus_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+}  bus_t;
+extern bus_t bus;
 
 void free_stack(stack_t *head);
 void f_pop(stack_t **head, unsigned int counter);
