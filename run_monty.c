@@ -25,9 +25,9 @@ void free_tokens(void)
 }
 
 /**
- * token_arr_len - Gets the length of current op_toks.
+ * token_arr_len - Gets the length.
  *
- * Return: Length of current op_toks (as int).
+ * Return: Length of current op_toks.
  */
 unsigned int token_arr_len(void)
 {

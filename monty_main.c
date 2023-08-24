@@ -1,16 +1,16 @@
 #include "monty.h"
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 
 char **op_toks = NULL;
 
 /**
- * main - the entry point for Monty Interp
- * @argc: the count of arguments passed to the program
- * @argv: pointer to an array of char pointers to arguments
+ * main - Entry point.
+ * @argc: Argument count.
+ * @argv: pointer.
  *
- * Return: (EXIT_SUCCESS) on success (EXIT_FAILURE) on error
+ * Return: On success (EXIT_SUCCESS) On error (EXIT_FAILURE)
  */
 int main(int argc, char **argv)
 {
