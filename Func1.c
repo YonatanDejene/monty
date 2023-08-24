@@ -39,7 +39,7 @@ void monty_swap(stack_t **stack, unsigned int line_number)
 
 void monty_push(stack_t **stack, unsigned int line_number)
 {
-	stack_t *new; 
+	stack_t *new;
 	stack_t	*temp;
 	int j;
 
@@ -120,7 +120,6 @@ void monty_pint(stack_t **stack, unsigned int line_number)
 
 	printf("%d\n", (*stack)->next->n);
 }
-
 
 /**
  * monty_pop - Removes the top value element.
